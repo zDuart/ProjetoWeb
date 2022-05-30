@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina3.css">
+    <title>Biografia Robinson</title>
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+
+        div {
+            font-size: 30px;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+
+        p {
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .cabecalho {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .banner {
+            display: grid;
+            grid-template-columns: 50px 1fr 1fr 1fr 1fr;
+            background-color: rgb(247, 48, 48);
+            margin: 0px;
+            height: 45px;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        a {
+            top: 5px;
+            position: relative;
+            color: black;
+            text-decoration: none;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: rgb(247, 48, 48);
+        }
+
+        .dark-mode-p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cabecalho">
+        <div class="banner">
+            <div>
+                <a href="index.html" style="height: 45px;">
+                    <img src="Rlogo.png" alt="" style="height: 33px;">
+                </a>
+            </div>
+            <div>
+                <a href="index.html">Início</a>
+            </div>
+            <div>
+                <a href="pagina6.html">Família</a>
+            </div>
+            <div>
+                <a href="pagina5.html">História na Escola</a>
+            </div>
+            <div>
+                <a href="pagina4.html">Onde Nasceu</a>
+            </div>
+        </div>
+
+        <h1>Bem-vindo a Biografia de</h1>
+        <h1>Robinson Eduardo</h1>
+        <h3 style="text-align: center;">1 Info 1</h3>
+
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider" onclick="darkMode()"></span>
+        </label>
+
+        <script>
+            function darkMode() {
+                let element = document.body;
+                element.classList.toggle("dark-mode");
+
+                let arrayPs = document.getElementsByTagName('p');
+                for (var i = 0; i < arrayPs.length; i++)
+                    arrayPs[i].classList.toggle("dark-mode-p");
+
+            }
+        </script>
+
+
+
+        <div class="card">
+            <div class="card-info">
+                <div class="card-avatar"></div>
+                <div class="card-title">Robinson</div>
+                <div class="card-subtitle">Redes Sociais &amp; Instagram: @eduardokzk twitter: @duartkzk</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
